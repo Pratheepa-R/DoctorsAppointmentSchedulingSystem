@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>User Sign UP</title>
+<link rel="stylesheet" href="usersignup.css"> 
+</head>
+<body>
+<style>
+body {
+  background-image: url('ladydoctor.jpg');
+  background-size:800px 1300px;
+  background-repeat:no-repeat;
+}
+</style>
+<div class="loginbox">
+<img src ="user.jpg" class="user">
+<h1> SIGN UP </h1>
+<form method="POST" autocomplete="off">
+            <p>NAME</p>
+            <input type="text" name="nam" placeholder="Enter name" required>
+            <p>DATE OF BIRTH</p>
+            <input type="date" name="date" required>
+            <p>AGE</p>
+            <input type="text" name="age" placeholder="Enter age" required>
+            <p>GENDER</p>
+            <input type="radio" name="gender" value="M">Male
+		</br>
+            <input type="radio" name="gender" value="F">Female
+            <p>MOBILE</p>
+            <input type="text" name="phone" placeholder="Enter mobile number" required>
+		<p>EMAIL ID</p>
+		<input type="text" name="email" placeholder="Enter email ID" required>
+		<p>PASSWORD</p>
+            <input type="password" name="p" id="pass" placeholder="Enter password" required>
+            <p>CONFIRM PASSWORD</p>
+            <input type="password" name="rp" id="repass" placeholder="Re-enter password" required>
+	      <input type="submit" id="UID" name="genuserid" onclick="guid()" value="GENERATE USER ID">
+            <script>
+            function guid()
+            {
+                var userid="";
+				var digits="0123456789";
+				for(let i=0;i<4;i++) {
+					userid+=digits[Math.floor(Math.random()*10)];
+				}
+				window.alert("Your user ID is : "+userid);
+                document.cookie="userid="+userid;
+                document.getElementById("UID").disabled=true;
+            }
+		function check(){
+				password=document.getElementById("pass").value;
+				repassword=document.getElementById("repass").value;
+				if(password!=repassword){
+					document.getElementById('pass').value = "";
+					document.getElementById('repass').value = "";
+					window.alert("Passwords Don't Match");
+				}
+		}
+		</script>
+		<input type="Submit" name='signup' onclick="check()" formaction="usersignup.php" value="SIGN UP">
+</form>
+</div>
+</body>
+</html>

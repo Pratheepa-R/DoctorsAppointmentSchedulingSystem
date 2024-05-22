@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>User Login</title>
+<link rel="stylesheet" href="userlogin.css"> 
+</head>
+<body>
+<style>
+body {
+  background-image: url('doctor.png');
+  background-size:800px 700px;
+  background-repeat:no-repeat;
+}
+</style>
+<div class="loginbox">
+<img src ="user.jpg" class="user">
+<h1> SIGN IN </h1>
+<form action="userlogin.php" method="POST" autocomplete="off">
+      <p>USER ID</p>
+      <input type="text" name="id" placeholder="Enter User ID" required>
+	<p>USERNAME</p>
+	<input type="text" name="username" placeholder="Enter Username" required>
+      <p>PASSWORD</p>
+     	<input type="password" name="pass" placeholder="Enter Password" required>
+      <input type="Submit" name="login" value ="LOGIN">
+      <a href="usersignup.html">Don't have an account?</a>
+</form>
+</div>
+</body>
+</html>

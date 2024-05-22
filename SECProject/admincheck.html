@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>Admin Login</title>
+<link rel="stylesheet" href="admincheck.css"> 
+</head>
+<body>
+<style>
+body {
+  background-image: url('admin.jpg');
+  background-size:800px 700px;
+  background-repeat:no-repeat;
+}
+</style>
+<div class="loginbox" id="box">
+<img src="user.jpg" class="user">
+<h1>ADMIN</h1>
+      <p>PASSWORD</p>
+     	<input type="password" id="adminpasswd" placeholder="Enter Password" required>
+      <input type="submit" onclick="checkpasswd()" value ="LOGIN">
+</div>
+<div>
+		<a href="adddetails.html"><button id="details1">Add details</button></a>
+		<a href="editid.html"><button id="details2">Edit details</button></a>
+		<a href="removeid.html"><button id="details3">Remove details</button></a>
+</div>
+<style>
+#details1,#details2,#details3{
+		display:none;
+}
+</style>
+<script>
+function checkpasswd(){
+  let x="123";
+  let y=document.getElementById("adminpasswd").value;
+  if(x==y){
+     document.getElementById("box").style.display="none";
+     document.getElementById("details1").style.display="block";
+	document.getElementById("details2").style.display="block";
+	document.getElementById("details3").style.display="block";
+  }
+  else{
+     alert("Incorrect Password");
+  }   
+}
+</script>
+</body>
+</html>

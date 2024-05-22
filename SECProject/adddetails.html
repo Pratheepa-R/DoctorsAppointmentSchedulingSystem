@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Add Details</title>
+<link rel="stylesheet" href="adddetails.css">
+</head>
+<body>
+<style>
+body {
+  background-image: url('hospital.jpg');
+  background-size:800px 750px;
+  background-repeat:no-repeat;
+}
+</style>
+<form action="adddetails.php" method="POST" autocomplete="off">
+<div class="box">
+<h1><center>ADD DETAILS</center></h1>
+	<p>SCHEDULE ID</p>
+      <input type="text" name="schid" placeholder="Enter Schedule ID" required>
+     <p>DOCTOR ID</p>
+      <input type="text" name="docid" placeholder="Enter Doctor ID" required>
+	<p>NAME</p>
+      <input type="text" name="docname" placeholder="Enter Doctor's name" required>
+      <p>SPECIALISATION</p>
+      <input type="text" name="docspec" placeholder="Enter Specialisation" required>
+	<p>DATE</p>
+      <input type="text" name="date" placeholder="YYYY-MM-DD" required>
+      <p>START TIME</p>
+      <input type="text" name="stime" placeholder="Enter starting time" required>
+	<p>END TIME</p>
+	<input type="text" name="etime" placeholder="Enter ending time" required>
+      <input type="Submit" name="add" value="ADD">
+</div>
+</form>
+</body>
+</html>

@@ -1,0 +1,57 @@
+.box {
+    width: 420px;
+    height: 800px;
+    background: #fff;
+    color: #000;
+    top: 50%;
+    left: 81%;
+    border-radius: 7%;
+    border:2px solid black;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+.box h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+    font-weight:bold;
+}
+.box p
+{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.box input
+{
+    width: 100%;
+    margin-bottom: 20px;
+    
+}
+.box input[type="text"]
+{
+    border: none;
+    border-bottom: 2px solid #000;
+    background: transparent;
+    outline: none;
+    height: 50px;
+    color: #000;
+    font-size: 16px;
+}
+    .box input[type="Submit"] {
+        border: none;
+        outline: none;
+        height: 40px;
+        background: #549db9;
+        color: #fff;
+        font-size: 18px;
+        border-radius: 20px;
+    }
+        .box input[type="Submit"]:hover {
+            cursor: pointer;
+            background: #38cc44;
+            color: #000;
+        }
